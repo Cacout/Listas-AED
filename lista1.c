@@ -158,3 +158,243 @@ int main ()
 
   return 0;
   }
+
+//Leia um número e imprima o resto da divisão por 7.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+  int num, div;
+
+   printf ("Digite um numero inteiro:\n");
+   scanf ("%i", &num);
+
+   div= num%7
+
+   printf ("A divisao por 7 eh igual a: %i\n",div);
+   return 0;
+  }
+
+/*Calcular a soma dos termos de uma P.A. lendo os valores do primeiro termo, do segundo termo e do número de 
+termos. formulas:
+Sn=n*(a1+an)/2, onde Sn é a soma dos termos, a1 o primeiro termo e an o último termo. O n-ésimo termo de uma 
+progressão aritmética,  pode ser obtido por meio da formula: an=a1+(n-1).r, onde r é a razão da P.A.*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+  int t1, t2, t3, somat, r;
+
+  printf ("Digite o primeiro termo:\n");
+  scanf ("%i", &t1);
+  printf ("Digite o segundo termo:\n");
+  scanf ("%i", &t2);
+  printf ("Digite o terceiro termo:\n");
+  scanf ("%i", &t3);
+
+  somat=t1+t3;
+  r=somat*(t1+t2+t3)/2;
+
+  printf ("A soma dos termos dessa P.A eh:%i", r);
+  return 0;
+  }
+  
+//Ler um valor inteiro do teclado e dizer se é par 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+  int num;
+
+ printf ("Digite um numero inteiro:\n");
+ scanf  ("%i", &num);
+
+  if (num%2==0){
+  printf ("O numero digitado eh par.\n");
+  }else{
+      
+  }
+  return 0;
+  }
+
+//Ler um valor inteiro do teclado e dizer se é ímpar 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+  int num;
+
+  printf ("Digite um numero inteiro:\n");
+  scanf  ("%i", &num);
+
+  if (num%2==1){
+    printf ("O valor digitado eh impar.\n");
+  }else{
+    
+  }
+  return 0;
+  }
+
+//ler um valor inteiro do teclado e dizer se ímpar e maior que 100.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+  int num;
+
+  printf ("Digite um valor inteiro:\n");
+  scanf  ("%i", &num);
+
+  if (num%2==1){
+    printf ("O valor digitado eh impar.\n");
+  }else{
+    
+  }if (num>100){
+    printf ("O valor digitado eh maior que 100.\n");
+  }else {
+    
+  }
+  return 0;
+  }
+
+//ler um valor inteiro do teclado e dizer se é par e menor que 100, ou ímpar e maior que 100
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+  int num;
+
+  printf ("Digite um valor inteiro:\n");
+  scanf  ("%i", &num);
+
+  if (num%2==0){
+    printf ("O valor digitado eh par.\n");
+  }
+  else {
+    printf ("O valor digitado eh impar.\n");
+  }
+  if (num>100){
+    printf ("O valor digitado eh maior que 100.");
+  }
+  else {
+    printf ("O valor digitado eh menor que 100");
+  }
+  return 0;
+  }
+
+//ler um valor inteiro do teclado e dizer se pertence ao intervalo aberto entre (25:75).
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+  int num;
+
+  printf ("Digite um valor inteiro:\n");
+  scanf  ("%i", &num);
+
+  if (num<25){
+    printf ("O valor digitado esta abaixo do intervalo.\n");
+  }
+  else {
+    printf ("O valor digitado esta dentro do intervalo.\n");
+  }
+  if (num>75){
+    printf ("O valor digitado esta acima do intervalo.\n");
+  }
+  else {
+    
+  }
+  return 0;
+  }
+
+//ler um valor inteiro do teclado e dizer se pertence aos intervalos fechados [15:45] ou [66:99]
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int num;
+    printf("Digite um valor inteiro:\n");
+    scanf ("%i", &num);
+
+    if ((num >=15) && (num <=45))
+    printf ("O numero esta dentro do intervalo [15:45].\n");
+    else
+    printf ("O numero informado nao consta no intervalo [15:45]\n");
+
+    if ((num >=66) && (num <=99))
+    printf ("O numero esta contido no intervalo [66:99]\n");
+    else
+    printf ("o numero informado nao consta no intervalo [66:99]\n");
+
+    return 0;
+}
+
+//ler dois valores inteiros do teclado e dizer se o primeiro é par e o segundo é ímpar.
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int v1, v2;
+    
+    printf("Digite um valor inteiro:\n");
+    scanf ("%i", &v1);
+    printf("Digite outro valor inteiro:\n");
+    scanf ("%i", &v2);
+    
+    if (v1 % 2 ==0)
+    printf ("O primeiro valor e par.\n");
+    else
+    printf ("O primeiro valor e impar.\n");
+
+
+    if (v2 % 2 ==0)
+    printf ("O segundo valor e par.\n");
+    else
+    printf ("O segundo valor e impar.\n");
+
+    return 0;
+}
+
+//ler dois valores inteiros do teclado e dizer se o primeiro é par e positivo, e o segundo é ímpar e negativo.
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int num1, num2;
+
+    printf("Digite dois valores, no minimo um negativo:\n");
+    scanf ("%i %i", &num1, &num2);
+
+    if (num1%2 ==0){
+    printf ("O primeiro numero e par.");
+    }else{
+    printf ("O primeiro numero e impar.");
+    }if (num1 >=0){
+    printf ("O primeiro numero tambem e positivo.\n");
+    }else{
+    printf ("O primeiro numero tambem e negativo.\n");
+    }
+
+    if (num2%2==0){
+    printf ("O segundo numero e par.");
+    }else{
+    printf ("O segundo numero e impar.");
+    }if (num2 >=0){
+    printf ("O segundo numero tambem e positivo.\n");
+    }else{
+    printf ("O segundo numero tambem e negativo.\n");
+    }
+
+    return 0;
+}
+
+
+
+
