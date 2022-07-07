@@ -454,6 +454,35 @@ int main ()
   return 0;
   }
           
- 
+ /*A serie de Fibonacci eh formada pela sequencia:
+1,1,2,3,5,8,13,21,34...
+Escreva um algoritmo q peça um num N maior que 2. Gere e imprima uma serie ate este
+enesimo termo.*/
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int numero,a,b,c,cont;
+
+    printf ("Digite um numero inteiro maior que 2:\n");
+    scanf  ("%i", &numero);
+    a=1;
+    b=1;
+
+    printf("%i %i", a, b);
+    cont=2;
+    while (cont<numero)
+    {
+        c=a+b;
+        printf ("%i", c);
+        a=b;
+        b=c;
+        cont=cont+1;
+
+    }
+
+    return 0;
+}
+
 
 
