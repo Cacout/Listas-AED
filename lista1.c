@@ -362,6 +362,42 @@ int main()
     return 0;
 }
 
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int cod;
+    
+    printf ("Ola, seja bem vindo a nossa lanchonete!\n");
+    printf ("1. Hamburguer.....R$30,00\n");
+    printf ("2. Cheeseburguer..R$35,50\n");
+    printf ("3. Fritas.........R$20,50\n");
+    printf ("4. Refrigerante...R$10,00\n");
+    printf ("5. Milkshake......R$30,00\n");
+    printf ("Digite o numero referente ao item escolhido:\n");
+    scanf  ("%i", &cod);
+    
+    if (cod==1){
+        printf ("Voce escolheu o Hamburguer, o total a ser pago eh de R$30,00\n");
+    }
+    if (cod==2){
+        printf ("Voce escolheu o Cheeseburguer, o total a ser pago eh de R$35,50\n");
+    }
+    if (cod==3){
+        printf ("Voce escolheu as Fritas, o total a ser pago eh de R$20,50\n");
+    }
+    if (cod==4){
+        printf ("Voce escolheu o Refrigerante, o total a ser pago eh de R$10,00\n");
+    }
+    if (cod==5){
+        printf ("Voce escolheu o Milkshake, o total a ser pago eh de R$30,00\n");
+    }
+    
+    return 0;
+}
+
+
+
 //ler dois valores inteiros do teclado e dizer se o primeiro é par e positivo, e o segundo é ímpar e negativo.
 #include <stdio.h>
 #include <stdlib.h>
@@ -395,6 +431,29 @@ int main()
     return 0;
 }
 
+//Calcular e imprimir o fatorial de um algoritmo
+#include <stdio.h>
+#include <stdlib.h>
 
+int main ()
+{
+  int numero, fatorial, cont;
+  printf ("Digite um numero:\n);
+  scanf  ("%i", &numero);
+  cont=1;
+  fatorial=1;
+  
+  while (cont<=numero)
+  {
+      fatorial=fatorial*cont;
+      cont=cont+1;
+
+  }
+
+  printf ("O fatorial de %i eh %i\n", numero, fatorial);
+  return 0;
+  }
+          
+ 
 
 
