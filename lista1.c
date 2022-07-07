@@ -485,4 +485,34 @@ int main()
 }
 
 
+/*O numero 3025 possui a seguinte caracteristica:
+30+25=55
+55^2=3025
+Quantos e quais são os números de 4 digitos que possuem essa característica?*/
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int numero, qntd, resto, quociente, soma;
+    double quadrado;
+    numero=2025;
+    qntd=0;
+
+    while (numero<=9999)
+    {
+        resto=numero%100;
+        quociente=numero/100;
+        soma=resto+quociente;
+        quadrado=pow(soma,2);
+        if (numero==quadrado)
+        {
+            printf ("Numero %d tem a caracteristica\n", numero);
+            qntd=qntd+1;
+        }
+        numero=numero+1;
+    }
+    printf ("A quantidade de numeros encontrados: %d\n", qntd);
+
+    return 0;
+}
 
