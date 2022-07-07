@@ -516,3 +516,21 @@ int main()
     return 0;
 }
 
+          
+//TABUADA
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int numero, i;
+    printf ("Digite um numero para a sua tabuada:\n");
+    scanf ("%d", &numero);
+    printf ("TABUADA do %i\n", numero);
+
+    for (i=1; i<=10; i=i+1) {
+       printf ("%2d x %2d = %2d\n", i,numero,i*numero);
+    }
+    return 0;
+}
+
+
