@@ -534,3 +534,20 @@ int main()
 }
 
 
+//TABUADA DE 1 ATE 9
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int  i, j;
+    printf ("TABUADA DO 1 ATE O 9\n");
+
+    for (i=1; i<=9; i=i+1) {
+       printf ("Tabuda do %d\n", i);
+       for (j=1; j<=9; j=j+1)
+       {
+           printf ("%2d x %2d = %2d\n", i, j, i*j);
+       }
+    }
+    return 0;
+}
